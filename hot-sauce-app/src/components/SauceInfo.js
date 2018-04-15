@@ -1,12 +1,13 @@
 import React from "react"
+import { Container } from "reactstrap"
 
 function SauceInfo() {
-  {
-  }
   return (
-    <div>
-      <h1>Sauce Info section</h1>
-    </div>
+    <Container>
+      <div>
+        <h1>Sauce Info section</h1>
+      </div>
+    </Container>
   )
 }
 
