@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p>Hot Sauce Database App</p>
+        <h1 class="title">Hot Sauce Database App</h1>
         <SearchField />
         <HotSauceCarousel />
         <HotSauceDisplay />

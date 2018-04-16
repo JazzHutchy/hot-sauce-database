@@ -1,0 +1,7 @@
+.pictureSpace {
+  height: 300px;
+  width: 50%;
+  margin: 10px auto;
+  background-color: #b1b1b1;
+  border-radius: 5px;
+}

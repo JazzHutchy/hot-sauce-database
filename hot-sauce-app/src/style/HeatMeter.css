@@ -7,18 +7,20 @@
   line-height: 1.428571429;
   border-radius: 15px;
   background-color: LightGray;
-  /* float: left;
-  clear: both; */
-  margin: 5px;
+  margin: 10px auto;
+  /* margin: 5px; */
 }
 
 .center {
-  /* float: right;
-  clear: both; */
-  width: 70%;
+  text-align: center;
 }
 
 .heatMeter {
-  display: inline-block;
-  border: solid red 5px;
+  display: flex;
+  justify-content: flex-start;
+  /* border: solid red 5px; */
+  width: 55%;
+  margin: 0px auto;
+  background-color: red;
+  border-radius: 15px;
 }

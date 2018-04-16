@@ -7,7 +7,6 @@ function HeatMeter() {
     <Container>
       <div>
         <h1>Heat Level</h1>
-        <p>Testoisdfsdvczdfg</p>
         <div class="center">
           <div class="heatMeter">
             <div id="bit7" type="div" class="bitbtn circle" />
