@@ -1,0 +1,8 @@
+{
+  "name": "hot-sauce-database",
+  "version": "1.0.0",
+  "description": "Database for hot sauce",
+  "main": "server.js",
+  "repository": "git@github.com:JazzHutchy/hot-sauce-database.git",
+  "license": "MIT"
+}
