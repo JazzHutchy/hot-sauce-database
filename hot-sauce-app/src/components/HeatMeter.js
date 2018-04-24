@@ -19,20 +19,6 @@ function HeatMeter() {
             <div id="bit0" type="div" class="bitbtn circle" />
           </div>
           <div style={{ height: 20, clear: "both" }} />
-          <div>
-            Type on the keyboard to see the ASCII value above.<br />
-            Press GO to send the entire sequence.<br />
-            <form>
-              <input
-                id="keyboard"
-                style={{ width: "50%" }}
-                placeholder="Type here"
-              />
-              <button id="go" class="btn btn-primary">
-                Go
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </Container>

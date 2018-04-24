@@ -1,11 +1,8 @@
-* {
-  background-color: #fff28d;
-}
-
 .App {
   text-align: center;
+  background: linear-gradient(#ff0000, #fff28d);
 }
 
 .title {
-  color: red;
+  color: #ffd900;
 }
