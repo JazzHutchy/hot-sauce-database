@@ -6,12 +6,14 @@ GET http://localhost:7000/about
 
 ###
 
-GET http://localhost:7000/postcode.json
+GET http://localhost:7000/hotSauces/http://localhost:7000/hotSauces/5ae565f4491c937566fb6f44
 
 ###
+POST http://localhost:7000/hotSauces
+Content-Type: application/json
 
-GET http://localhost:7000/postcode/3020
-
-###
-
-GET http://localhost:7000/postcode/3dfssddsf
+{
+  "name": "Siracha Mega Deluxe Edition",
+  "heatLevel": "8",
+  "sauceInfo": "Special edition that was banned in 30 countries for causing bowel problems"
+}
