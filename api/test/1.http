@@ -6,7 +6,7 @@ GET http://localhost:7000/about
 
 ###
 
-GET http://localhost:7000/hotSauces/http://localhost:7000/hotSauces/5ae565f4491c937566fb6f44
+GET http://localhost:7000/hotSauces
 
 ###
 POST http://localhost:7000/hotSauces
@@ -16,4 +16,14 @@ Content-Type: application/json
   "name": "Siracha Mega Deluxe Edition",
   "heatLevel": "8",
   "sauceInfo": "Special edition that was banned in 30 countries for causing bowel problems"
+}
+
+###
+PATCH http://localhost:7000/hotSauces/5ae6c724a3a58787b719c441
+Content-Type: application/json
+
+{
+  "name": "Nandos Extra Hot Peri Peri Sauce",
+  "heatLevel": "7",
+  "sauceInfo": "Exclusive to Nandos stores near you!"
 }

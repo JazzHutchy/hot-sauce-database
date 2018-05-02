@@ -3,7 +3,7 @@ const HotSauce = require('../models/hotSauce')
 
 const router = express.Router()
 
-// List all artists
+// List all hot sauce
 router.get('/hotSauces', (req, res) => {
   // Ask the model to list all documents
   HotSauce.find()
@@ -14,7 +14,7 @@ router.get('/hotSauces', (req, res) => {
     })
 })
 
-// Read an individal artist
+// Read an individal sauce
 router.get('/hotSauces/:id', (req, res) => {
   const id = req.params.id
   // Ask the model for the document with this id
@@ -46,13 +46,30 @@ router.post('/hotSauces', (req, res) => {
     })
     // Failure
     .catch((error) => {
-      res.status(400).json({ error: error })
+      res.status(400).json({ error: error.message })
     })
 })
 
 // Update
 router.patch('/hotSauces/:id', (req, res) => {
+  const id = req.params.id
   const attributes = req.body
+  HotSauce.findByIdAndUpdate(id, attributes, { new: true })
+    .then((hotSauce) => {
+      if (hotSauce) {
+        console.log('Found Hot sauce and updated')
+        res.status(200).json(hotSauce)
+      }
+      else {
+        console.log('Not found')
+        res.status(404).json({ error: `Hot sauce not found with '${id}'` })
+      }
+    })
+    .catch((error) => {
+      console.log('Uh oh, error has occured')
+      res.status(400).json({ error: error.message })
+    })
+
 })
 
 // Destroy
