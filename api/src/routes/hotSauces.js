@@ -74,7 +74,14 @@ router.patch('/hotSauces/:id', (req, res) => {
 
 // Destroy
 router.delete('/hotSauces/:id', (req, res) => {
-
+  const id = req.params.id
+  HotSauce.findByIdAndRemove(id)
+    .then((hotSauce) =>
+      res.json(hotSauce)
+    )
+    .catch((error) =>
+      res.status(400).json({ error: error.message })
+    )
 })
 
 module.exports = router

@@ -13,17 +13,20 @@ POST http://localhost:7000/hotSauces
 Content-Type: application/json
 
 {
-  "name": "Siracha Mega Deluxe Edition",
-  "heatLevel": "8",
-  "sauceInfo": "Special edition that was banned in 30 countries for causing bowel problems"
+  "name": "John's Special Sauce",
+  "heatLevel": "1",
+  "sauceInfo": "John's secret recipe"
 }
 
 ###
-PATCH http://localhost:7000/hotSauces/5ae6c724a3a58787b719c441
+PATCH http://localhost:7000/hotSauces/5aea789e40165d09933486da
 Content-Type: application/json
 
 {
-  "name": "Nandos Extra Hot Peri Peri Sauce",
-  "heatLevel": "7",
-  "sauceInfo": "Exclusive to Nandos stores near you!"
+  "name": "John's Actual Special Sauce",
+  "heatLevel": "11",
+  "sauceInfo": "jidofhudoifgiuhsiudes"
 }
+
+###
+DELETE http://localhost:7000/hotSauces/5aea789e40165d09933486da
