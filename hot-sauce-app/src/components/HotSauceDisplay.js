@@ -7,8 +7,7 @@ function HotSauceDisplay({
 }) {
   return (
     <div>
-      <h1>Hot Sauce Title</h1>
-      <p> {name}</p>
+      <h1>{name}</h1>
       <h1>Hot Sauce Picture</h1>
       <div class="pictureSpace">Picture</div>
     </div>

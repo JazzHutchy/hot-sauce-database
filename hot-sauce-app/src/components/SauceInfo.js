@@ -8,9 +8,10 @@ function SauceInfo({
   return (
     <Container>
       <div>
-        <h1>Sauce Info section</h1>
-        <div class="sauceInfo">Sauce information goes here</div>
-        <p> {sauceInfo} </p>
+        <h1>Info</h1>
+        <div class="sauceInfo">
+          <p> {sauceInfo} </p>
+        </div>
       </div>
     </Container>
   )
